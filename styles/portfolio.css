@@ -1,11 +1,23 @@
-body {
-  color: blue;
+.hero {
+  font-family: "fanwood text";
+  text-align: center;
+  background-color: rgb(240, 231, 231);
+  line-height: 2;
+  padding: 160px;
 }
 h1 {
-  font-family: "fanwood text";
   font-weight: bold;
-  background-color: yellow;
 }
 p {
-  font-family: "fanwood text";
+  font-size: 22px;
+}
+
+.btn-branding {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  border-radius: 4;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 12px 20px;
+  background-color: blue;
 }
