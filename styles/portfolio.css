@@ -7,9 +7,15 @@
 }
 h1 {
   font-weight: bold;
+  font-family: "fanwood text";
+}
+h3 {
+  font-family: "fanwood text";
+  font-weight: bold;
 }
 p {
   font-size: 22px;
+  font-family: "fanwood text";
 }
 
 .btn-branding {
@@ -21,9 +27,20 @@ p {
   padding: 12px 20px;
   background-color: blue;
 }
+
 @media (max-width: 900px) {
   .project-description {
     padding: 0;
     text-align: center;
+  }
+  p {
+    text-align: center;
+    font-size: 18px;
+  }
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+    font-size: 25px;
   }
 }
