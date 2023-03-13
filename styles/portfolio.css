@@ -3,13 +3,17 @@
   text-align: center;
   background-color: rgb(240, 231, 231);
   line-height: 2;
-  padding: 160px;
+  padding: 160px 20px;
 }
 h1 {
   font-weight: bold;
   font-family: "fanwood text";
 }
 h3 {
+  font-family: "fanwood text";
+  font-weight: bold;
+}
+h2 {
   font-family: "fanwood text";
   font-weight: bold;
 }
@@ -27,7 +31,26 @@ p {
   padding: 12px 20px;
   background-color: blue;
 }
-
+.btn-primary {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  border-radius: 4;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 12px 20px;
+  background-color: blue;
+  text-decoration: none;
+}
+@media (max-width: 900px) {
+  .card {
+    text-align: center;
+  }
+}
+@media (max-width: 900px) {
+  .container {
+    text-align: center;
+  }
+}
 @media (max-width: 900px) {
   .project-description {
     padding: 0;
@@ -43,4 +66,13 @@ p {
     text-align: center;
     font-size: 25px;
   }
+}
+.about-work h1 {
+  font-size: 44px;
+}
+.about-work-content {
+}
+
+.mywork-page {
+  padding: 160px 20px;
 }
