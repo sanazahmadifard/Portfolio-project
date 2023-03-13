@@ -45,6 +45,7 @@ p {
   background-color: blue;
   text-decoration: none;
 }
+
 @media (max-width: 900px) {
   .card {
     text-align: center;
