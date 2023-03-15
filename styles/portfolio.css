@@ -71,11 +71,13 @@ p {
   }
   h1,
   h2,
-  h3,
-  h4,
-  h5 {
+  h3 {
     text-align: center;
     font-size: 25px;
+  }
+  h4,
+  h5 {
+    font-size: 18px;
   }
   @media (max-width: 900px) {
     .logo {
@@ -133,4 +135,51 @@ nav a {
 nav a :hover,
 nav li.active a {
   color: rgb(61, 61, 248);
+}
+.footer .email-link {
+  text-decoration: none;
+  color: #272142;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.footer .email-link:hover {
+  color: rgb(61, 61, 248);
+}
+
+.social-links a {
+  color: rgb(61, 61, 248);
+  margin: 0px 25px;
+  padding: 5px 17px;
+  background-color: rgb(235, 223, 223);
+  font-size: 40px;
+  border-radius: 50%;
+}
+.social-links a:hover {
+  color: white;
+  background-color: rgb(61, 61, 248);
+}
+@media (max-width: 900px) {
+  .footer .email-link {
+    font-size: 15px;
+  }
+  .social-links a {
+    font-size: 20px;
+    padding: 5px 10px;
+  }
+}
+.contact-box {
+  background-color: rgb(235, 223, 223);
+  padding: 30px 60px;
+  border-radius: 10px;
+}
+.contact-box p {
+  margin: 0;
+}
+@media (max-width: 900px) {
+  .btn-primary {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
 }
