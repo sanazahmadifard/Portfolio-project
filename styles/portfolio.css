@@ -37,7 +37,7 @@ p {
   font-size: 18px;
   line-height: 27px;
   padding: 12px 20px;
-  background-color: blue;
+  background-color: rgb(61, 61, 248);
 }
 .btn-primary {
   font-family: "Poppins", sans-serif;
@@ -46,7 +46,7 @@ p {
   font-size: 18px;
   line-height: 27px;
   padding: 12px 20px;
-  background-color: blue;
+  background-color: rgb(61, 61, 248);
   text-decoration: none;
 }
 
@@ -77,6 +77,19 @@ p {
     text-align: center;
     font-size: 25px;
   }
+  @media (max-width: 900px) {
+    .logo {
+      max-height: 80px;
+      margin-top: 10px;
+    }
+    nav li a {
+      font-size: 13px;
+      margin-left: 8px;
+    }
+    nav li {
+      line-height: 30px;
+    }
+  }
   .footer {
     text-align: center;
     font-size: 25px;
@@ -93,4 +106,31 @@ p {
 .mycoding-page,
 .mycarpentry-page {
   padding: 160px 20px;
+}
+.logo {
+  max-width: 120px;
+}
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 120px;
+  margin-left: 15px;
+  font-size: 20px;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav {
+  padding: 10px 0;
+}
+nav a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: #272142;
+  transition: all 150ms ease-in-out;
+}
+nav a :hover,
+nav li.active a {
+  color: rgb(61, 61, 248);
 }
