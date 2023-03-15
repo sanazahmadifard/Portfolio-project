@@ -178,7 +178,8 @@ nav li.active a {
   margin: 0;
 }
 @media (max-width: 900px) {
-  .btn-primary {
+  .btn-primary,
+  .btn-branding {
     font-size: 14px;
     padding: 8px 12px;
   }
