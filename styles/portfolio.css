@@ -77,6 +77,10 @@ p {
     text-align: center;
     font-size: 25px;
   }
+  .footer {
+    text-align: center;
+    font-size: 25px;
+  }
 }
 .about-work h1 {
   font-size: 44px;
@@ -85,9 +89,8 @@ p {
   margin-bottom: 40px;
 }
 
-.mywork-page {
-  padding: 160px 20px;
-}
-.mycoding-page {
+.mywork-page,
+.mycoding-page,
+.mycarpentry-page {
   padding: 160px 20px;
 }
