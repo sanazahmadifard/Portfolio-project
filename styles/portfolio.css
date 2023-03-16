@@ -10,7 +10,9 @@
   text-align: center;
   background-color: var(--primary-color);
   line-height: 2;
-  padding: 100px 20px;
+  padding: 82px 20px;
+  border: 10px soli grey;
+  box-shadow: 2px;
 }
 h1,
 h2,
