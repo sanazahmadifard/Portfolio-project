@@ -96,6 +96,7 @@ p {
     padding: 5px 10px;
   }
 }
+
 @media (max-width: 900px) {
   .btn-primary,
   .btn-branding {
@@ -122,7 +123,7 @@ p {
 .mywork-page,
 .mycoding-page,
 .mycarpentry-page {
-  padding: 80px 20px;
+  padding: 15px 20px;
 }
 .logo {
   max-width: 120px;
@@ -139,7 +140,7 @@ nav ul {
   margin: 0;
 }
 nav {
-  padding: 10px 0;
+  padding: 5px 0;
 }
 nav a {
   text-decoration: none;
@@ -169,6 +170,12 @@ nav li.active a {
   background-color: rgb(235, 223, 223);
   font-size: 40px;
   border-radius: 50%;
+}
+@media (max-width: 900px) {
+  .social-links a {
+    font-size: 20px;
+    padding: 3px 10px;
+  }
 }
 .social-links a:hover {
   color: white;
