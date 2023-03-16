@@ -190,7 +190,10 @@ nav li.active a {
 .contact-box p {
   margin: 0;
 }
-
+.open-sourced {
+  color: var(--secondry-color);
+  text-decoration: underline;
+}
 a {
   text-decoration: none;
   color: white;
