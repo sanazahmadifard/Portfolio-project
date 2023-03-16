@@ -1,104 +1,117 @@
+:root {
+  --primary-color: rgb(240, 231, 231);
+  --text-font: "fanwood text";
+  --button-font: "Poppins", sans-serif;
+  --secondry-color: rgb(61, 61, 248);
+  --hover-color: #272142;
+}
 .hero {
   font-family: "fanwood text";
   text-align: center;
-  background-color: rgb(240, 231, 231);
+  background-color: var(--primary-color);
   line-height: 2;
-  padding: 160px 20px;
+  padding: 100px 20px;
 }
-h1 {
-  font-weight: bold;
-  font-family: "fanwood text";
-}
-h3 {
-  font-family: "fanwood text";
-  font-weight: bold;
-}
-h2 {
-  font-family: "fanwood text";
-  font-weight: bold;
-}
-h4 {
-  font-family: "fanwood text";
-  font-weight: bold;
-}
+h1,
+h2,
+h3,
+h4,
 h5 {
-  font-family: "fanwood text";
   font-weight: bold;
+  font-family: var(--text-font);
 }
 p {
   font-size: 22px;
-  font-family: "fanwood text";
+  font-family: var(--text-font);
 }
 
 .btn-branding {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--button-font);
   color: white;
   border-radius: 4;
   font-size: 18px;
   line-height: 27px;
   padding: 12px 20px;
-  background-color: rgb(61, 61, 248);
+  background-color: var(--secondry-color);
 }
 .btn-primary {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--button-font);
   color: white;
   border-radius: 4;
   font-size: 18px;
   line-height: 27px;
   padding: 12px 20px;
-  background-color: rgb(61, 61, 248);
+  background-color: var(--secondry-color);
   text-decoration: none;
 }
 
 @media (max-width: 900px) {
-  .card {
+  .card,
+  .container,
+  .project-description,
+  p,
+  h1,
+  h2,
+  h3 {
     text-align: center;
   }
 }
-@media (max-width: 900px) {
-  .container {
-    text-align: center;
-  }
-}
+
 @media (max-width: 900px) {
   .project-description {
     padding: 0;
-    text-align: center;
   }
-  p {
-    text-align: center;
+  p,
+  h4,
+  h5 {
     font-size: 18px;
   }
   h1,
   h2,
   h3 {
-    text-align: center;
-    font-size: 25px;
-  }
-  h4,
-  h5 {
-    font-size: 18px;
-  }
-  @media (max-width: 900px) {
-    .logo {
-      max-height: 80px;
-      margin-top: 10px;
-    }
-    nav li a {
-      font-size: 13px;
-      margin-left: 8px;
-    }
-    nav li {
-      line-height: 30px;
-    }
-  }
-  .footer {
-    text-align: center;
     font-size: 25px;
   }
 }
+@media (max-width: 900px) {
+  .logo {
+    max-height: 80px;
+    margin-top: 10px;
+  }
+  nav li a {
+    font-size: 13px;
+    margin-left: 8px;
+  }
+  nav li {
+    line-height: 30px;
+  }
+}
+@media (max-width: 900px) {
+  .footer .email-link {
+    font-size: 15px;
+  }
+  .social-links a {
+    font-size: 20px;
+    padding: 5px 10px;
+  }
+}
+@media (max-width: 900px) {
+  .btn-primary,
+  .btn-branding {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+.footer {
+  text-align: center;
+  font-size: 25px;
+}
+
 .about-work h1 {
   font-size: 44px;
+}
+.about-work {
+  margin: 0;
+  padding: 0;
 }
 .about-work-content {
   margin-bottom: 40px;
@@ -107,7 +120,7 @@ p {
 .mywork-page,
 .mycoding-page,
 .mycarpentry-page {
-  padding: 160px 20px;
+  padding: 80px 20px;
 }
 .logo {
   max-width: 120px;
@@ -128,28 +141,27 @@ nav {
 }
 nav a {
   text-decoration: none;
-  font-family: "Poppins", sans-serif;
-  color: #272142;
+  font-family: var(--button-font);
+  color: var(--hover-color);
   transition: all 150ms ease-in-out;
 }
 nav a :hover,
 nav li.active a {
-  color: rgb(61, 61, 248);
+  color: var(--secondry-color);
 }
 .footer .email-link {
   text-decoration: none;
-  color: #272142;
+  color: var(--hover-color);
   font-size: 20px;
   font-family: "Poppins", sans-serif;
   text-align: center;
 }
 
 .footer .email-link:hover {
-  color: rgb(61, 61, 248);
+  color: var(--secondry-color);
 }
-
 .social-links a {
-  color: rgb(61, 61, 248);
+  color: var(--secondry-color);
   margin: 0px 25px;
   padding: 5px 17px;
   background-color: rgb(235, 223, 223);
@@ -158,29 +170,19 @@ nav li.active a {
 }
 .social-links a:hover {
   color: white;
-  background-color: rgb(61, 61, 248);
+  background-color: var(--secondry-color);
 }
-@media (max-width: 900px) {
-  .footer .email-link {
-    font-size: 15px;
-  }
-  .social-links a {
-    font-size: 20px;
-    padding: 5px 10px;
-  }
-}
+
 .contact-box {
-  background-color: rgb(235, 223, 223);
+  background-color: var(--primary-color);
   padding: 30px 60px;
   border-radius: 10px;
 }
 .contact-box p {
   margin: 0;
 }
-@media (max-width: 900px) {
-  .btn-primary,
-  .btn-branding {
-    font-size: 14px;
-    padding: 8px 12px;
-  }
+
+a {
+  text-decoration: none;
+  color: white;
 }
