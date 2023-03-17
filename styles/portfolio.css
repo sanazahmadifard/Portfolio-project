@@ -80,7 +80,7 @@ p {
 @media (max-width: 900px) {
   nav li a {
     font-size: 12px;
-    margin-left: 15px;
+    margin-left: 12px;
   }
   nav li {
     line-height: 25px;
